@@ -65,10 +65,10 @@ password: `admin`
 
  Run with:
  ```
- docker compose -f full-stack.yml up
- docker compose -f full-stack.yml down
+ docker compose -f full-stack-zk-multiple-kafka-multiple-full-stack-ag.yml up
+ docker compose -f full-stack-zk-multiple-kafka-multiple-full-stack-ag.yml down
  ```
-** Note: if you find that you can not connect to [localhost:8080](http://localhost:8080/) please run `docker compose -f full-stack.yml build` to rebuild the port mappings.
+** Note: if you find that you can not connect to [localhost:8080](http://localhost:8080/) please run `docker compose -f full-stack-zk-multiple-kafka-multiple-full-stack-ag.yml build` to rebuild the port mappings.
 
 ## Single Zookeeper / Single Kafka
 
@@ -136,7 +136,7 @@ A: Add the following line to your docker compose environment variables: `KAFKA_L
 
 **Q: How do I delete data to start fresh?**
 
-A: Your data is persisted from within the docker compose folder, so if you want for example to reset the data in the full-stack docker compose, do a `docker compose -f full-stack.yml down`.
+A: Your data is persisted from within the docker compose folder, so if you want for example to reset the data in the full-stack docker compose, do a `docker compose -f full-stack-zk-multiple-kafka-multiple-full-stack-ag.yml down`.
 
 **Q: Can I change the zookeeper ports?**
 
