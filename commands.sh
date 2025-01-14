@@ -27,6 +27,8 @@ cat .env
 docker compose -f full-stack-zk-multiple-kafka-multiple-full-stack-ag.yml up -d
 
 curl localhost:8080
+curl localhost:8088
+curl localhost:8083
 
 login:
 admin@admin.io

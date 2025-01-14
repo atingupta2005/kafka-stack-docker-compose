@@ -208,7 +208,7 @@ services:
     volumes:
       - ./development.toml:/config.toml
     ports:
-      - 8080:8080
+      - 18080:8080
         
   postgresql:
     extends:
