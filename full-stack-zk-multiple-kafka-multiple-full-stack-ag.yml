@@ -184,7 +184,7 @@ services:
 
   
   ksqldb-server:
-    image: confluentinc/cp-ksqldb-server:7.3.2
+    image: confluentinc/cp-ksqldb-server:latest
     hostname: ksqldb-server
     container_name: ksqldb-server
     ports:
@@ -201,6 +201,15 @@ services:
       - kafka2
       - kafka3
 
+  ksqldb-ui:
+    image: deniskrumko/ksqldb-ui:latest
+    environment:
+      APP_CONFIG: /config.toml
+    volumes:
+      - ./development.toml:/config.toml
+    ports:
+      - 8080:8080
+        
   postgresql:
     extends:
       service: postgresql
