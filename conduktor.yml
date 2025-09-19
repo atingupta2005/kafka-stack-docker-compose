@@ -32,6 +32,7 @@ services:
       CDK_CLUSTERS_0_KAFKACONNECTS_0_URL: "http://kafka-connect:8083"
       CDK_CLUSTERS_0_KAFKACONNECTS_0_NAME: "full stack kafka connect"
       CDK_CLUSTERS_0_KSQLDBS_0_URL: "http://ksqldb-server:8088"
+      CDK_CLUSTERS_0_KSQLDBS_0_NAME: "My KSQL Server"
 volumes:
   pg_data: {}
   conduktor_data: {}
